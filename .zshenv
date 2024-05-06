@@ -46,8 +46,8 @@ export FZF_DEFAULT_OPTS="--height 100% \
 --border sharp \
 --layout reverse \
 --color '$FZF_COLORS' \
---prompt '∷ ' \
---pointer > \
+--prompt '➤ ' \
+--pointer • \
 --marker ⇒"
 
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -n 10'"
