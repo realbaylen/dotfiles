@@ -1,0 +1,13 @@
+#!/bin/sh
+dmenu_cmd='dmenu -i -l 20 -bw 1 -c'
+
+docs_directory="/usr/share/doc/arch-wiki/html/en/"
+list=$(find ${docs_directory} -iname "*.html")
+
+selection=$(printf '%s\n' "$list[@]" | $dmenu_cmd )
+  #cut -d '/' -f7- | \ # Remove file path
+  #sed -e 's/_/ /g' -e 's/.html//g'
+
+
+# If selection is not empty, open it in Librewolf
+test -n "${selection}" && librewolf "${selection}"

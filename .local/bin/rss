@@ -1,0 +1,33 @@
+#!/bin/sh
+# RSS Script
+
+#dmenu_cmd='gum filter --height=50 --no-sort --no-fuzzy'
+if [ $(uname) == "Darwin" ]; then
+	ui='fzf --exact --scheme=history'
+else
+	ui='dmenu -l 35 -i'
+fi
+
+sfeed_update >/dev/null 2>&1 &
+
+main() {
+	url=$(sfeed_plain "$HOME/.sfeed/feeds/"* | sed 's/^.\{1\}//' | sort -r | $ui |
+		sed -n 's@^.* \([a-zA-Z]*://\)\(.*\)$@\1\2@p')
+
+	case $url in
+	*youtube.com* | *youtu.be*)
+		mpv "$url"
+		;;
+	*reddit.com*)
+		rtv "$url"
+		;;
+	*)
+		if [ -n "$url" ]; then
+			#w3m "$url"
+			$BROWSER "$url" &
+		fi
+		;;
+	esac
+}
+
+main # Run main function
