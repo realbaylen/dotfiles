@@ -35,7 +35,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
   source "$HOME/.config/shell/aliases/*"
 
 # Aliases
-alias miami='ssh romanebm@ceclnx01.cec.miamioh.edu'
 alias rsh='source $HOME/.zshrc'
 alias nav='navi'
 alias weather='curl wttr.in'
