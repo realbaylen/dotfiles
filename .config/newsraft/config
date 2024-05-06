@@ -1,0 +1,30 @@
+#     _   __                             ______     ______            _____      
+#    / | / /__ _      ________________ _/ __/ /_   / ____/___  ____  / __(_)___ _
+#   /  |/ / _ \ | /| / / ___/ ___/ __ `/ /_/ __/  / /   / __ \/ __ \/ /_/ / __ `/
+#  / /|  /  __/ |/ |/ (__  ) /  / /_/ / __/ /_   / /___/ /_/ / / / / __/ / /_/ / 
+# /_/ |_/\___/|__/|__/____/_/   \__,_/_/  \__/   \____/\____/_/ /_/_/ /_/\__, /  
+#                                         Baylen's Newsraft Config File /____/   
+
+# Bind h to quit (Allows navigation and quitting with h)
+#bind h quit
+
+# Bind o to open in default browser
+bind o exec open "%l" &; mark-read
+
+# Bind m to open mpv interactively
+bind m exec mpv "%l"; mark-read
+
+# Bind M to open mpv in the background
+bind M exec mpv --no-terminal "%l" &; mark-read
+
+# Bind w to download item using using the item atitle as the filename to ~/Documents/Articles/ using wget
+bind w exec wget -O ~/Documents/Articles/"%t".html "%l"
+
+# Bind W to download item using yt-dlp to ~/Movies/
+bind W exec yt-dlp -o "~/Movies/" "%l"
+
+# Bind Z to force quit
+bind Z quit-hard
+
+# Bind Z to force quit
+bind q quit-hard
