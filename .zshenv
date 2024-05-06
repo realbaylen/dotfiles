@@ -93,6 +93,7 @@ fi
 
 #
 export PATH="$PATH:$SCRIPTS_DIR"
+export PATH="$PATH:$HOME/.local/bin/"
 
 #  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠒⠈⠉⠉⠉⠉⠒⠀⠀⠤⣀⠀⠀⠀⠀
 #  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠁⠀⠀⠀⠀⠀⠀⢀⣄⠀⠀⠀⠀⠑⡄⠀⠀
