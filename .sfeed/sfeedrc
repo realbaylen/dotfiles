@@ -1,0 +1,58 @@
+# sfeedpath="$HOME/.sfeed/feeds"
+
+fetch() {
+    # allow for 1 redirect, set User-Agent, timeout is 15 seconds.
+    curl -L --max-redirs 1 -H "User-Agent: 007" -f -s -m 15 \
+        "$2" 2>/dev/null
+}
+
+feeds() {
+    # IRL
+    feed "Oxford Observer" "https://oxfordobserver.org/feed/"
+
+    # Tech
+    feed "suckless.org" "https://suckless.org/atom.xml"
+#    feed "Slashdot" "https://rss.slashdot.org/Slashdot/slashdot" "https://slashdot.org"
+#    feed "Hacker News" "https://news.ycombinator.com/rss" "https://news.ycombinator.com/"
+    feed "codemadness.org" "https://codemadness.org/atom.xml"
+
+    # Video Games
+    feed "RetroRGB" "http://retrorgb.com/category/retrorgb/feed" "http://retrorgb.com/"
+#    feed "Nintendo Life" "https://www.nintendolife.com/feeds/latest"
+    feed "GBAtemp" "https://gbatemp.net/official/index.rss"
+    feed "RetroTINK Blog" "https://www.retrotink.com/blog-feed.xml"
+    feed "Nintendo World Report" "https://www.nintendoworldreport.com/rss/news"
+
+    # YouTube
+    feed "DidYouKnowGaming?" "https://www.youtube.com/feeds/videos.xml?channel_id=UCyS4xQE6DK4_p3qXQwJQAyA"
+    feed "Game SacK" "https://www.youtube.com/feeds/videos.xml?channel_id=UCT6LaAC9VckZYJUzutUW3PQ"
+    feed "Hard4Games" "https://www.youtube.com/feeds/videos.xml?channel_id=UCacYHKoNLHrVoN1L9uup86A"
+    feed "jvscholz" "https://www.youtube.com/feeds/videos.xml?channel_id=UCcaTUtGzOiS4cqrgtcsHYWg" "https://www.youtube.com/"
+    feed "Luke Smith" "https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA"
+    feed "Macho Nacho Productions" "https://www.youtube.com/feeds/videos.xml?channel_id=UC4CsqctrGOn4NTz09sAhXwQ"
+    feed "Mental Outlaw" "https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA"
+    feed "My Life in Gaming" "https://www.youtube.com/feeds/videos.xml?channel_id=UCpvtp7mH0Cdq8FQUxcjDq0Q"
+    feed "Scott The Woz" "https://www.youtube.com/feeds/videos.xml?channel_id=UC4rqhyiTs7XyuODcECvuiiQ"
+    feed "Scott's Stash" "https://www.youtube.com/feeds/videos.xml?channel_id=UCmm3qhYkdW699stV_28TQpw"
+    feed "Video Game Esoterica" "https://www.youtube.com/feeds/videos.xml?channel_id=UCn2pQB4jsCTLUtx2NIkCvUg"
+    feed "Whang!" "https://www.youtube.com/feeds/videos.xml?channel_id=UC3jdnIP2u5hCJpVZ-TuDrCg"
+    feed "Tama Hero" "https://www.youtube.com/feeds/videos.xml?channel_id=UCid9DssdW6-yxUNl3_aba6A"
+    feed "Nyarly" "https://www.youtube.com/feeds/videos.xml?channel_id=UCoqYuMJFtaqsuAN-m6e3u-Q"
+    feed "Jrose11" "https://www.youtube.com/feeds/videos.xml?channel_id=UC5HolAcNQGGVQ6gY8QWuoKg"
+    feed "Cinemassacre" "https://www.youtube.com/feeds/videos.xml?channel_id=UC0M0rxSz3IF0CsSour1iWmw"
+
+    # Music
+    feed "My Chemical Romance" "https://www.youtube.com/feeds/videos.xml?channel_id=UCCZGYab5SpD0I7Z5JqJZgww"
+    feed "Weezer" "https://www.youtube.com/feeds/videos.xml?channel_id=UC7JDBUzkcwRGtQGia3_mMgQ"
+    feed "Paramore" "https://www.youtube.com/feeds/videos.xml?channel_id=UCc7_woMAIVIW2mAr1rPCsFQ"
+    feed "Pierce The Veil" "https://www.youtube.com/feeds/videos.xml?channel_id=UCyipvkWkNpmEQPGovalDjFA"
+
+    # Software
+    feed "ACME Labs" "http://acme.com/updates/updates_rss2.xml"
+    feed "Ypnose" "https://ywstd.fr/blog/atom.xml"
+    feed "kaashif" "https://www.kaashif.co.uk/feeds/all.atom.xml"
+
+    # Blogs
+    feed "Luke's Webpage" "https://lukesmith.xyz/index.xml"
+    feed "tudor" "https://tudorr.ro/feed.rss"
+}
