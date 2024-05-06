@@ -42,7 +42,6 @@ alias mu='ncmpc'
 alias yt='ytfzf'
 alias ..='cd ..'
 alias w3m='w3m -o confirm_qq-false'
-alias email='neomutt'
 
 # WeeChat
 alias irc='weechat'
