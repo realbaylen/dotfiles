@@ -40,7 +40,8 @@ feeds() {
     feed "Nyarly" "https://www.youtube.com/feeds/videos.xml?channel_id=UCoqYuMJFtaqsuAN-m6e3u-Q"
     feed "Jrose11" "https://www.youtube.com/feeds/videos.xml?channel_id=UC5HolAcNQGGVQ6gY8QWuoKg"
     feed "Cinemassacre" "https://www.youtube.com/feeds/videos.xml?channel_id=UC0M0rxSz3IF0CsSour1iWmw"
-
+    feed "Livakivi" "https://www.youtube.com/feeds/videos.xml?channel_id=UCgHGPOxUMfWsiy1ZyR-tLVw"
+    feed "blameitonjorge" "https://www.youtube.com/feeds/videos.xml?channel_id=UCU3oAyhHDXjgbxazqOEG2UA"
     # Music
     feed "My Chemical Romance" "https://www.youtube.com/feeds/videos.xml?channel_id=UCCZGYab5SpD0I7Z5JqJZgww"
     feed "Weezer" "https://www.youtube.com/feeds/videos.xml?channel_id=UC7JDBUzkcwRGtQGia3_mMgQ"
